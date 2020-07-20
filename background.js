@@ -2,7 +2,7 @@ var itemTitle = "Open in Instagram";
 var instagramUrl = "https://www.instagram.com/";
 
 function onSelectionClicked(info, tab) {
-  let currentUrl = instagramUrl + info.selectionText;
+  let currentUrl = instagramUrl + info.selectionText.trim();
   console.log("Opening: " + currentUrl);
 
   chrome.tabs.create({ url: currentUrl });
