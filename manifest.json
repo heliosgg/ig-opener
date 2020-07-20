@@ -1,11 +1,16 @@
 {
   "name": "IG-Opener",
   "description": "Adds to context menu \"Open in Instagram\"",
-  "version": "0.1",
+  "version": "0.2",
   "permissions": [
     "contextMenus",
     "tabs"
   ],
+  "icons": {
+    "16": "./assets/icons/instagram16.png",
+    "32": "./assets/icons/instagram32.png",
+    "64": "./assets/icons/instagram64.png"
+  },
   "background": {
     "scripts": ["./background.js"]
   },
